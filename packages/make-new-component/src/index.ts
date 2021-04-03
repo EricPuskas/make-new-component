@@ -102,32 +102,44 @@ const buildComponentFiles = async (paths: Paths) => {
   /**
    * Gets the content for the main template
    */
-  const mainTemplate = await fs.readFile(paths.TEMPLATE_MAIN_PATH);
+  const mainTemplate = await fs.readFile(
+    path.join(__dirname, paths.TEMPLATE_MAIN_PATH)
+  );
 
   /**
    * Gets the content for the story template
    */
-  const storyTemplate = await fs.readFile(paths.TEMPLATE_STORY_PATH);
+  const storyTemplate = await fs.readFile(
+    path.join(__dirname, paths.TEMPLATE_STORY_PATH)
+  );
 
   /**
    * Gets the content for the doc template
    */
-  const docTemplate = await fs.readFile(paths.TEMPLATE_DOC_PATH);
+  const docTemplate = await fs.readFile(
+    path.join(__dirname, paths.TEMPLATE_DOC_PATH)
+  );
 
   /**
    * Gets the content for the test template
    */
-  const testTemplate = await fs.readFile(paths.TEMPLATE_TEST_PATH);
+  const testTemplate = await fs.readFile(
+    path.join(__dirname, paths.TEMPLATE_TEST_PATH)
+  );
 
   /**
    * Gets the content for the style template
    */
-  const stylesTemplate = await fs.readFile(paths.TEMPLATE_STYLES_PATH);
+  const stylesTemplate = await fs.readFile(
+    path.join(__dirname, paths.TEMPLATE_STYLES_PATH)
+  );
 
   /**
    * Gets the content for the index template
    */
-  const indexTemplate = await fs.readFile(paths.TEMPLATE_INDEX_PATH);
+  const indexTemplate = await fs.readFile(
+    path.join(__dirname, paths.TEMPLATE_INDEX_PATH)
+  );
 
   /**
    * Creates the component directory
@@ -138,37 +150,52 @@ const buildComponentFiles = async (paths: Paths) => {
   /**
    * Creates the main file
    */
-  await createComponentFile(paths.MAIN_PATH, mainTemplate);
+  await createComponentFile(
+    path.join(__dirname, paths.MAIN_PATH),
+    mainTemplate
+  );
   utils.logItemCompletion("Component created.");
 
   /**
    * Creates the story file
    */
-  await createComponentFile(paths.STORY_PATH, storyTemplate);
+  await createComponentFile(
+    path.join(__dirname, paths.STORY_PATH),
+    storyTemplate
+  );
   utils.logItemCompletion("Story created.");
 
   /**
    * Creates the doc file
    */
-  await createComponentFile(paths.DOC_PATH, docTemplate);
+  await createComponentFile(path.join(__dirname, paths.DOC_PATH), docTemplate);
   utils.logItemCompletion("Document created.");
 
   /**
    * Creates the test file
    */
-  await createComponentFile(paths.TEST_PATH, testTemplate);
+  await createComponentFile(
+    path.join(__dirname, paths.TEST_PATH),
+    testTemplate
+  );
   utils.logItemCompletion("Test created.");
 
   /**
    * Creates the styles file
    */
-  await createComponentFile(paths.STYLES_PATH, stylesTemplate);
+  await createComponentFile(
+    path.join(__dirname, paths.STYLES_PATH),
+    stylesTemplate
+  );
   utils.logItemCompletion("Styles created.");
 
   /**
    * Creates the index file
    */
-  await createComponentFile(paths.INDEX_PATH, indexTemplate);
+  await createComponentFile(
+    path.join(__dirname, paths.INDEX_PATH),
+    indexTemplate
+  );
   utils.logItemCompletion("Index created.");
 };
 
