@@ -12,6 +12,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "dev": "npm run prepublishOnly",
     "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify"
   },
   "keywords": [

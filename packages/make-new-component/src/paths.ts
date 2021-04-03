@@ -26,8 +26,8 @@ export const getPaths = (directoryName: string, fileName: string) => {
   /**
    * Defines the base paths
    */
-  const baseJsTemplatePath = "../templates/js";
-  const baseTsTemplatePath = "../templates/ts";
+  const baseJsTemplatePath = "./templates/js";
+  const baseTsTemplatePath = "./templates/ts";
 
   /**
    * Javascript paths
