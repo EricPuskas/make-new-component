@@ -1,2 +1,2 @@
 // @ts-nocheck
-export { default, COMPONENT_NAMEDefaultProps } from "./COMPONENT_NAME";
+export { default } from "./COMPONENT_NAME";

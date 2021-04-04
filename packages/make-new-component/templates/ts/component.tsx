@@ -12,22 +12,13 @@ import { useStyles } from "./COMPONENT_NAME.styles";
 /**
  * Defines the props interface
  */
-interface COMPONENT_NAMEProps {
-  componentName?: string;
-}
-
-/**
- * Defines the default props
- */
-const defaultProps = {
-  componentName: "COMPONENT_NAME",
-};
+interface COMPONENT_NAMEProps {}
 
 /**
  * Displays the component
  */
 const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
-  const { componentName } = props;
+  const {} = props;
 
   /**
    * Handles the translations
@@ -39,12 +30,7 @@ const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
    */
   const classes = useStyles();
 
-  console.log(componentName);
-
   return <div className={classes.COMPONENT_NAME}>{t("COMPONENT_NAME")}</div>;
 };
 
-COMPONENT_NAME.defaultProps = defaultProps;
-
 export default COMPONENT_NAME;
-export { defaultProps as COMPONENT_NAMEDefaultProps };
