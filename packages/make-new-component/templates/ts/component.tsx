@@ -12,7 +12,7 @@ import { useStyles } from "./COMPONENT_NAME.styles";
 /**
  * Defines the props interface
  */
-interface COMPONENT_NAMEProps {}
+export interface COMPONENT_NAMEProps {}
 
 /**
  * Displays the component
@@ -23,7 +23,7 @@ const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
   /**
    * Handles the translations
    */
-  const { t } = useTranslation();
+  const { t } = jest ? { t: (str: string) => str } : useTranslation();
 
   /**
    * Gets the component styles

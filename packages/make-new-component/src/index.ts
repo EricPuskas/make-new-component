@@ -124,13 +124,6 @@ const buildComponentFiles = async (paths: Paths) => {
   );
 
   /**
-   * Gets the content for the doc template
-   */
-  const docTemplate = await fsp.readFile(
-    path.join(__dirname, paths.TEMPLATE_DOC_PATH)
-  );
-
-  /**
    * Gets the content for the test template
    */
   const testTemplate = await fsp.readFile(
@@ -176,12 +169,6 @@ const buildComponentFiles = async (paths: Paths) => {
    */
   await createComponentFile(calculatePath(paths.STORY_PATH), storyTemplate);
   utils.logItemCompletion("Story created.");
-
-  /**
-   * Creates the doc file
-   */
-  await createComponentFile(calculatePath(paths.DOC_PATH), docTemplate);
-  utils.logItemCompletion("Document created.");
 
   /**
    * Creates the test file

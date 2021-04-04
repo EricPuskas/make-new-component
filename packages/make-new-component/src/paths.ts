@@ -10,7 +10,6 @@ export interface Paths {
   TEMPLATE_INDEX_PATH: string;
   MAIN_PATH: string;
   STORY_PATH: string;
-  DOC_PATH: string;
   TEST_PATH: string;
   STYLES_PATH: string;
   INDEX_PATH: string;
@@ -41,7 +40,6 @@ export const getPaths = (directoryName: string, fileName: string) => {
     TEMPLATE_INDEX_PATH: `${baseJsTemplatePath}/index.js`,
     MAIN_PATH: `${directoryName}/${fileName}.js`,
     STORY_PATH: `${directoryName}/${fileName}.stories.js`,
-    DOC_PATH: `${directoryName}/${fileName}.md`,
     TEST_PATH: `${directoryName}/${fileName}.test.js`,
     STYLES_PATH: `${directoryName}/${fileName}.styles.js`,
     INDEX_PATH: `${directoryName}/index.js`,
@@ -59,7 +57,6 @@ export const getPaths = (directoryName: string, fileName: string) => {
     TEMPLATE_INDEX_PATH: `${baseTsTemplatePath}/index.tsx`,
     MAIN_PATH: `${directoryName}/${fileName}.tsx`,
     STORY_PATH: `${directoryName}/${fileName}.stories.tsx`,
-    DOC_PATH: `${directoryName}/${fileName}.md`,
     TEST_PATH: `${directoryName}/${fileName}.test.tsx`,
     STYLES_PATH: `${directoryName}/${fileName}.styles.tsx`,
     INDEX_PATH: `${directoryName}/index.tsx`,
