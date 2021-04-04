@@ -1,6 +1,6 @@
 // @ts-nocheck
-import React from "react";
 import COMPONENT_NAME from "./COMPONENT_NAME";
+// @ts-ignore
 import ApiDoc from "./COMPONENT_NAME.md";
 
 export default {

@@ -13,7 +13,7 @@ import { useStyles } from "./COMPONENT_NAME.styles";
  * Defines the props interface
  */
 interface COMPONENT_NAMEProps {
-  componentName: string;
+  componentName?: string;
 }
 
 /**
@@ -39,7 +39,9 @@ const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
    */
   const classes = useStyles();
 
-  return <div className={classes.COMPONENT_NAME}>{t(componentName)}</div>;
+  console.log(componentName);
+
+  return <div className={classes.COMPONENT_NAME}>{t("COMPONENT_NAME")}</div>;
 };
 
 COMPONENT_NAME.defaultProps = defaultProps;
