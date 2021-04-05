@@ -30,7 +30,7 @@ const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
    */
   const classes = useStyles();
 
-  return <div className={classes.COMPONENT_NAME}>{t("COMPONENT_NAME")}</div>;
+  return <div className={classes.root}>{t("COMPONENT_NAME")}</div>;
 };
 
 export default COMPONENT_NAME;

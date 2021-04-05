@@ -1,6 +1,7 @@
 // @ts-nocheck
 /**
  * Storybook
+ * @see https://storybook.js.org/docs/react/get-started/introduction
  */
 import { Story, Meta } from "@storybook/react";
 

@@ -1,4 +1,7 @@
 // @ts-nocheck
+/**
+ * @see https://testing-library.com/docs/react-testing-library/intro
+ */
 import { render } from "@testing-library/react";
 
 /**
