@@ -12,7 +12,7 @@ import { useStyles } from "./COMPONENT_NAME.styles";
 /**
  * Defines the props interface
  */
-export interface COMPONENT_NAMEProps {}
+interface COMPONENT_NAMEProps {}
 
 /**
  * Displays the component
