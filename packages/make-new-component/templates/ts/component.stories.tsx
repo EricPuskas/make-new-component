@@ -29,9 +29,3 @@ const Template: Story<COMPONENT_NAMEProps> = (args) => (
  */
 export const Default = Template.bind({});
 Default.args = {};
-
-/**
- * Secondary case
- */
-export const Secondary = Template.bind({});
-Secondary.args = {};

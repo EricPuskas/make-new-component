@@ -1,6 +1,7 @@
 // @ts-nocheck
 /**
  * @see https://testing-library.com/docs/react-testing-library/intro
+ * @see https://www.robinwieruch.de/react-testing-library
  */
 import { render } from "@testing-library/react";
 
@@ -12,7 +13,8 @@ import COMPONENT_NAME from "./COMPONENT_NAME";
 /**
  * Default test
  */
-it("has a COMPONENT_NAME component", () => {
-  const { getByText } = render(<COMPONENT_NAME />);
-  expect(getByText("COMPONENT_NAME")).toBeInTheDocument();
+describe("COMPONENT_NAME", () => {
+  test("renders COMPONENT_NAME", () => {
+    render(<COMPONENT_NAME />);
+  });
 });

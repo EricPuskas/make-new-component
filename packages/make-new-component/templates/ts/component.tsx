@@ -12,25 +12,27 @@ import { useStyles } from "./COMPONENT_NAME.styles";
 /**
  * Defines the props interface
  */
-interface COMPONENT_NAMEProps {}
+export interface COMPONENT_NAMEProps {
+  text: string;
+}
 
 /**
  * Displays the component
  */
 const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
-  const {} = props;
+  const { text } = props;
 
   /**
    * Handles the translations
    */
-  const { t } = jest ? { t: (str: string) => str } : useTranslation();
+  const { t } = useTranslation();
 
   /**
    * Gets the component styles
    */
   const classes = useStyles();
 
-  return <div className={classes.root}>{t("COMPONENT_NAME")}</div>;
+  return <div className={classes.root}>{t(text)}</div>;
 };
 
 export default COMPONENT_NAME;
