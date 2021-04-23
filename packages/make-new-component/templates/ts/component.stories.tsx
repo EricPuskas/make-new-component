@@ -17,15 +17,26 @@ export default {
 
 /**
  * Defines the Template
- * @param props COMPONENT_NAMEProps
+ * @param args COMPONENT_NAMEProps
  * @returns
  */
-const Template: Story<COMPONENT_NAMEProps> = (props) => (
-  <COMPONENT_NAME {...props} />
+const Template: Story<COMPONENT_NAMEProps> = (args) => (
+  <COMPONENT_NAME {...args} />
 );
 
 /**
  * Default case
  */
 export const Default = Template.bind({});
-Default.props = {};
+
+/**
+ * Put your component props in here
+ *
+ * Example:
+ * Default.args = {
+ *  text: "Hello World"
+ * }
+ *
+ * Assuming that the component expects a prop text that is a string.
+ */
+Default.args = {};
