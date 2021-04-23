@@ -23,7 +23,7 @@ jest.mock("react-i18next", () => ({
  * Default test
  */
 describe("COMPONENT_NAME", () => {
-  test("renders COMPONENT_NAME", () => {
-    render(<COMPONENT_NAME />);
+  it("renders the component", () => {
+    // render(<COMPONENT_NAME />);
   });
 });

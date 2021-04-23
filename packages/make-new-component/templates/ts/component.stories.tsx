@@ -17,15 +17,15 @@ export default {
 
 /**
  * Defines the Template
- * @param args COMPONENT_NAMEProps
+ * @param props COMPONENT_NAMEProps
  * @returns
  */
-const Template: Story<COMPONENT_NAMEProps> = (args) => (
-  <COMPONENT_NAME {...args} />
+const Template: Story<COMPONENT_NAMEProps> = (props) => (
+  <COMPONENT_NAME {...props} />
 );
 
 /**
  * Default case
  */
 export const Default = Template.bind({});
-Default.args = {};
+Default.props = {};
