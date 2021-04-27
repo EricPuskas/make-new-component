@@ -53,12 +53,12 @@ export const getPaths = (directoryName: string, fileName: string) => {
     TEMPLATE_STORY_PATH: `${baseTsTemplatePath}/component.stories.tsx`,
     TEMPLATE_DOC_PATH: `${baseTsTemplatePath}/component.md`,
     TEMPLATE_TEST_PATH: `${baseTsTemplatePath}/component.test.tsx`,
-    TEMPLATE_STYLES_PATH: `${baseTsTemplatePath}/component.styles.tsx`,
+    TEMPLATE_STYLES_PATH: `${baseTsTemplatePath}/component.styles.ts`,
     TEMPLATE_INDEX_PATH: `${baseTsTemplatePath}/index.tsx`,
     MAIN_PATH: `${directoryName}/${fileName}.tsx`,
     STORY_PATH: `${directoryName}/${fileName}.stories.tsx`,
     TEST_PATH: `${directoryName}/${fileName}.test.tsx`,
-    STYLES_PATH: `${directoryName}/${fileName}.styles.tsx`,
+    STYLES_PATH: `${directoryName}/${fileName}.styles.ts`,
     INDEX_PATH: `${directoryName}/index.tsx`,
   };
 
