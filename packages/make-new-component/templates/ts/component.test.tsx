@@ -8,7 +8,7 @@ import { render } from "@testing-library/react";
 /**
  * Imports component
  */
-import COMPONENT_NAME from "./COMPONENT_NAME";
+import { COMPONENT_NAME } from "./COMPONENT_NAME";
 
 /**
  * Default test
