@@ -11,15 +11,6 @@ import { render } from "@testing-library/react";
 import COMPONENT_NAME from "./COMPONENT_NAME";
 
 /**
- * Mocking the useTranslation hook
- * @see https://github.com/i18next/react-i18next/issues/876
- *
- */
-jest.mock("react-i18next", () => ({
-  useTranslation: () => ({ t: (key: string) => key }),
-}));
-
-/**
  * Default test
  */
 describe("COMPONENT_NAME", () => {

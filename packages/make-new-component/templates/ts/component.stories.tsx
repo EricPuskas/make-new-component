@@ -8,7 +8,7 @@ import { Story, Meta } from "@storybook/react";
 /**
  * Component Imports
  */
-import COMPONENT_NAME, { COMPONENT_NAMEProps } from "./COMPONENT_NAME";
+import { COMPONENT_NAME, COMPONENT_NAMEProps } from "./COMPONENT_NAME";
 
 export default {
   title: "Components/COMPONENT_NAME",
