@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import path from "path";
 import fs, { promises as fsp } from "fs";
+// @ts-ignore
+import { version } from "../package.json";
 
 /**
  * External Imports
@@ -13,7 +15,7 @@ import { program } from "commander";
 import { getPaths, Paths } from "./paths";
 import { utils } from "./utils";
 
-program.version("2.0.1");
+program.version(version);
 
 /**
  * Init the program
