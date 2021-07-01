@@ -13,6 +13,8 @@ import { program } from "commander";
 import { getPaths, Paths } from "./paths";
 import { utils } from "./utils";
 
+program.version("2.0.1");
+
 /**
  * Init the program
  */
