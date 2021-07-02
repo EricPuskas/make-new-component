@@ -15,7 +15,7 @@ export interface COMPONENT_NAMEProps {
  * Defines the default props
  */
 const defaultProps: COMPONENT_NAMEProps = {
-  text: "COMPONENT_NAME",
+  text: "COMPONENT_NAME"
 };
 
 /**
@@ -29,7 +29,7 @@ export const COMPONENT_NAME: React.FC<COMPONENT_NAMEProps> = (props) => {
    */
   const classes = useStyles();
 
-  return <div className={classes.root}>{text}</div>;
+  return <div className={classes.COMPONENT_NAME}>{text}</div>;
 };
 
 COMPONENT_NAME.defaultProps = defaultProps;
